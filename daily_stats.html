@@ -309,7 +309,7 @@
 												</td>
 												<td style="padding-right: 5px;">
 													<p
-														style="margin: 0; width: 6px; height: 6px; border-radius: 50%; background-color: #FFBC00!important;">
+														style="margin: 0; width: 6px; height: 6px; border-radius: 50%; background-color: #FFBC00;">
 													</p>
 												</td>
 												<td style="padding-right: 16px;">
@@ -610,7 +610,7 @@
 											<tr>
 												<td>
 													<p
-														style="margin: 0;background-color: #00BC01!important; border-radius: 6px 6px 0 0; height: {{ excess_height }}px;">
+														style="margin: 0;background-color: #00BC01; border-radius: 6px 6px 0 0; height: {{ excess_height }}px;">
 													</p>
 												</td>
 											</tr>
@@ -637,24 +637,23 @@
 										{% set concepts = day.concepts_learned %}
 										{% if concepts == 0 %}
 										{# No activity - tiny red bar #}
-										<p
-											style="margin: 0;background-color: #EC0D27!important; border-radius: 6px; height: 5px;">
+										<p style="margin: 0;background-color: #EC0D27; border-radius: 6px; height: 5px;">
 										</p>
 										{% elif concepts < daily_learning_goal*0.5 %} {# Below 50% of goal - red bar, height
 											proportional to progress #} {% set percentage=(concepts / daily_learning_goal) | float
 											%} {% set bar_height=((percentage * 33) + 3) | int %} {# 3px min, scales to ~36px #} <p
-											style="margin: 0;background-color: #EC0D27!important; border-radius: 6px; height: {{ bar_height }}px;">
+											style="margin: 0;background-color: #EC0D27; border-radius: 6px; height: {{ bar_height }}px;">
 											</p>
 											{% elif concepts < daily_learning_goal %} {# Below goal - yellow bar, height
 												proportional to progress #} {% set percentage=(concepts / daily_learning_goal) |
 												float %} {% set bar_height=((percentage * 33) + 3) | int %} {# 3px min, scales to
 												~36px #} <p
-												style="margin: 0;background-color: #FFBC00!important; border-radius: 6px; height: {{ bar_height }}px;">
+												style="margin: 0;background-color: #FFBC00; border-radius: 6px; height: {{ bar_height }}px;">
 												</p>
 												{% else %}
 												{# Met or exceeded goal - green bar with flat top #}
 												<p
-													style="margin: 0;background-color: #00BC01!important; border-radius: 0 0 6px 6px; height: 38px;">
+													style="margin: 0;background-color: #00BC01; border-radius: 0 0 6px 6px; height: 38px;">
 												</p>
 												{% endif %}
 									</td>
@@ -911,7 +910,7 @@
 															<tr>
 																<td style="width: 14px;">
 																	<p
-																		style="margin: 0; width: 8px; height: 8px; border-radius: 50%; background-color: #FFBC00!important;">
+																		style="margin: 0; width: 8px; height: 8px; border-radius: 50%; background-color: #FFBC00;">
 																	</p>
 																</td>
 																<td>
@@ -942,15 +941,15 @@
 									style="width: 100%; padding: 10px 5px;">
 									{% for c in concepts_learned %}
 									<tr>
-										<td style="width: 73%;">
+										<td style="width: 100%;">
 											<p style="margin: 0;">
 												{{ c.concept_text }}
 											</p>
 										</td>
 										{% if c.difficulty == '' %}
-										<td style="font-size: 12px;font-weight: 590;">&nbsp;</td>
+										<td style="font-size: 12px;font-weight: 590; padding-right: 16px;">&nbsp;</td>
 										{% else %}
-										<td style="font-size: 12px;font-weight: 590;">
+										<td style="font-size: 12px;font-weight: 590; padding-right: 16px;">
 											{{ c.difficulty }}
 										</td>
 										{% endif %}
