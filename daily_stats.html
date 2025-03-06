@@ -1,94 +1,93 @@
 <!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office">
+	xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glite Daily Stats - {{ stat_date }}</title>
-  <meta name="color-scheme" content="light dark" />
-  <meta name="supported-color-schemes" content="light dark" />
-  <style type="text/css">
-    h1,
-    h2 {
-      font-size: 16px;
-    }
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Glite Daily Stats - {{ stat_date }}</title>
+	<meta name="color-scheme" content="light dark" />
+	<meta name="supported-color-schemes" content="light dark" />
+	<style type="text/css">
+		h1,
+		h2 {
+			font-size: 16px;
+		}
 
-    table {
-      border-spacing: 0;
-      mso-cellspacing: 0;
-      mso-padding-alt: 0;
-    }
+		table {
+			border-spacing: 0;
+			mso-cellspacing: 0;
+			mso-padding-alt: 0;
+		}
 
-    td {
-      padding: 0;
-    }
+		td {
+			padding: 0;
+		}
 
-    #outlook a {
-      padding: 0;
-    }
+		#outlook a {
+			padding: 0;
+		}
 
-    a {
-      text-decoration: none;
-      font-size: 16px;
-      color: #020306;
-    }
+		a {
+			text-decoration: none;
+			font-size: 16px;
+			color: #020306;
+		}
 
+		.text-grey {
+			color: #020306b3;
+		}
 
+		:root {
+			color-scheme: light dark;
+			supported-color-schemes: light dark;
+		}
 
-    :root {
-      color-scheme: light dark;
-      supported-color-schemes: light dark;
-    }
+		@media (prefers-color-scheme: dark) {
 
-    @media (prefers-color-scheme: dark) {
+			table,
+			td {
+				background-color: #1E1F22 !important;
+			}
 
-      table,
-      td {
-        background-color: #1E1F22 !important;
-      }
+			table.bg-grey,
+			table.bg-grey td {
+				background-color: #27282B !important;
+			}
 
-      table.bg-grey,
-      table.bg-grey td {
-        background-color: #27282B !important;
-      }
+			h1,
+			h2,
+			p,
+			td,
+			a {
+				color: rgba(255, 255, 255, 0.90) !important;
+			}
 
-      h1,
-      h2,
-      p,
-    td,
-      a {
-        color: rgba(255, 255, 255, 0.90) !important;
-      }
+			.text-grey {
+				color: rgba(255, 255, 255, 0.60) !important;
+			}
 
-      h1.text-grey,
-      h2.text-grey,
-      p.text-grey,
-      a.text-grey {
-        color: rgba(255, 255, 255, 0.60) !important;
-      }
+			div {
+				background-color: rgba(255, 255, 255, 0.07) !important;
+			}
 
-      div {
-        background-color: rgba(255, 255, 255, 0.07) !important;
-      }
+			div.light-grey {
+				background-color: #8C8D90 !important;
+				;
+			}
 
-      div.light-grey {
-        background-color: #8C8D90 !important;
-        ;
-      }
+			.border-white {
+				border: 1px solid rgba(255, 255, 255, 0.10) !important;
+			}
 
-      .border-white {
-        border: 1px solid rgba(255, 255, 255, 0.10) !important;
-      }
-
-      .dot-white {
-        background-color: rgba(255, 255, 255, 0.90) !important;
-      }
-    }
-  </style>
-  <!--[if (gte mso 9) | (IE)]>
+			.dot-white {
+				background-color: rgba(255, 255, 255, 0.90) !important;
+			}
+		}
+	</style>
+	<!--[if (gte mso 9) | (IE)]>
       <style type="text/css">
         table {
           border-collapse: collapse !important;
@@ -96,7 +95,7 @@
       </style>
     <![endif]-->
 
-  <!--[if (gte mso 9) | (IE)]>
+	<!--[if (gte mso 9) | (IE)]>
       <xml>
         <o:OfficeDocumentSettings>
           <o:AllowPNG />
@@ -104,8 +103,8 @@
         </o:OfficeDocumentSettings>
       </xml>
     <![endif]-->
-  <!-- Gmail-specific schema for the unsubscribe action -->
-  <script type="application/ld+json">
+	<!-- Gmail-specific schema for the unsubscribe action -->
+	<script type="application/ld+json">
     {
       "@context": "http://schema.org/",
       "@type": "EmailMessage",
@@ -119,931 +118,921 @@
 </head>
 
 <body style="Margin:0; padding:0;min-width:100%;background-color: #ffffff;">
-  <!--[if (gte mso 9) | (IE)]>
+	<!--[if (gte mso 9) | (IE)]>
       <style type="text/css">
         body { background-color: #dde0e1 !important;}
         body, table, td, p, a { font-family: sans-serif, Arial, Helvetica !important;}
       </style>
     <![endif]-->
 
-  <center style="width: 100%;table-layout: fixed;background-color: #ffffff;padding-top: 40px; padding-bottom: 40px;">
-    <div style="max-width: 393px;background-color: #ffffff;box-shadow: 0 0 10px rgba(0,0,0,0.2);">
-      <!-- Pre Header -->
-      <div
-        style="font-size:0;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width:0;opacity:0;overflow:hidden;mso-hide:all;">
-        Pre Header
-      </div>
-      <!--[if (gte mso 9) | (IE)]>
+	<center style="width: 100%;table-layout: fixed;background-color: #ffffff;padding-top: 40px; padding-bottom: 40px;">
+		<div style="max-width: 393px;background-color: #ffffff;box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+			<!-- Pre Header -->
+			<div
+				style="font-size:0;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width:0;opacity:0;overflow:hidden;mso-hide:all;">
+				Pre Header
+			</div>
+			<!--[if (gte mso 9) | (IE)]>
           <table width="393" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
           <tr>
           <td>
         <![endif]-->
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation"
-        style="background-color: #ffffff;color: #020306;Margin:0;padding: 2px 10px;max-width: 393px;width:100%;">
-        <tbody>
-          <!-- logo section -->
-          <tr>
-            <td>
-              <table style="padding: 10px; background-color: #F2F3F6; border-radius: 12px;" width="100%"
-                border="0" cellpadding="0" cellspacing="0" role="presentation" class="bg-grey">
-                <tr>
-                  <td style="width: 36px;" class="mobile-col-padding">
-                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="bg-grey">
-                      <tr>
-                        <td><a style="display: inline-block; font-size: 0;" href="https://www.google.com/"
-                            target="_blank" rel="noopener">
-                            <img style="vertical-align: middle; padding-right: 9px;"
-                              src="https://cdn.glite.ai/assets/email/logo.png" alt="Glite logo"
-                              border="0" width="36" />
-                          </a></td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td>
-                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="bg-grey">
-                      <tr>
-                        <td style="font-size: 0;"><a style="font-weight: 700; color: #000000;"
-                            href="https://www.glite.ai" target="_blank" rel="noopener">Glite</a></td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td>
-                    <table style="width: 100%;" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                      class="bg-grey">
-                      <tr>
-                        <td>
-                          <p style="margin: 0; text-align: end; font-size: 14px;" class="text-grey">
-                            {{ stat_date }}</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- 3 columns section -->
-          <tr>
-            <td align="center" style="font-size: 0;">
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
-                <tr>
-                  <td style="width: 33.333%;">
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; max-width: 124px; padding: 32px 5px; text-align: center;">
-                      <tr>
-                        <td style="padding: 0 0 4px 0;">
-                          <p style="margin: 0;font-size: 20px; font-weight: 700;">
-                            {{ word_points_change }}</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p style="margin: 0;font-size: 14px;" class="text-grey">
-                            Word points&sup1;</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td style="width: 33.333%;">
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; max-width: 124px; padding: 32px 5px; text-align: center;">
-                      <tr>
-                        <td style="padding: 0 0 4px 0;">
-                          <p style="margin: 0;font-size: 20px; font-weight: 700;">
-                            {{ app_time_spent }}</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p style="margin: 0;font-size: 14px;" class="text-grey">
-                            App usage</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td style="width: 33.333%;">
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; max-width: 124px; padding: 32px 5px; text-align: center;">
-                      <tr>
-                        <td style="padding: 0 0 4px 0;">
-                          <p style="margin: 0;font-size: 20px; font-weight: 700;">
-                            {{ concepts_learned_count }}</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p style="margin: 0;font-size: 14px;" class="text-grey">
-                            Flashcards</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- current Learning Speed -->
-          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; text-align: center; padding: 24px 10px; background-color: #F2F3F6; border-radius: 12px;"
-                class="bg-grey">
-                <tr>
-                  <td style="padding-bottom: 16px;">
-                    <h1 style="margin: 0;">
-                      Current Learning Speed
-                    </h1>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p style="margin: 0;font-size: 48px; font-weight: 700;">
-            {{ learning_speed }}
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding-bottom: 20px;">
-                    <p style="margin: 0;font-weight: 700;">
-                      words&nbsp;/ year
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p style="margin:0; color: rgba(2, 3, 6, 0.70);font-size: 14px;" class="text-grey">Your
-                      avg: 2,700 words&nbsp;/ year</p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- Mastered Words -->
-          {% if concepts_graduated_count>0 %}
-          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; padding: 32px 0 12px 0;">
-                <tr>
-                  <td>
-                    <h2 style="margin: 0;">
-                      Mastered Words</h2>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; padding: 4px 10px; border-radius: 12px; background-color: #F2F3F6;"
-                class="bg-grey">
-                {% for c in concepts_graduated %}
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; padding: 8px 0px;" class="bg-grey">
-                      <tr>
-                        <td style="width: 100%;">
-                          <p style="margin: 0;">
-                              {{ c.concept_text }}</p>
-                        </td>
-                        <td style="padding-right: 5px;">
-                          <p
-                            style="margin: 0; width: 6px; height: 6px; border-radius: 50%; background-color: #FFBC00;">
-                          </p>
-                        </td>
-                        <td style="padding-right: 16px;">
-                          <p style="margin: 0;width: 20px;font-size: 12px;font-weight: 590;">
-                            {{ c.difficulty }}</p>
-                        </td>
-                        <td style="padding-right: 12px;">
-                          <p
-                            style="margin: 0; width: 40px;color:#00AB00 !important;font-size: 12px;font-weight: 590;">
-                            {{ c.knowledge_gain }}</p>
-                        </td>
-                        <td>
-                          <img style="vertical-align: middle;"
-                            src="https://cdn.glite.ai/assets/email/chk.png" alt="check" border="0"
-                            width="24" />
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                {% if not loop.last %}
-                <tr>
-                  <td>
-                    <div style="width: 100%; max-width: 353px; height: 1px; background: #00000012;">
-                    </div>
-                  </td>
-                </tr>
-                {% endif %}
-                {% endfor %}
-              </table>
-            </td>
-          </tr>
-          {% endif %}
-          <!-- App Usage -->
-          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="padding: 32px 0 12px 0; width: 100%;">
-                <tr>
-                  <td>
-                    <h2 style="margin: 0;">
-                      App Usage
-                    </h2>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- graphic section -->
-            {% set total_width = 351 %}
-            {% set feed_div_width = (total_width * feed_time_spent_percentage / 100)|int %}
-            {% set audiodj_div_width = (total_width * audiodj_time_spent_percentage / 100)|int %}
-            {% set other_div_width = (total_width * other_time_spent_percentage / 100)|int %}          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; padding: 9px 4px 11px 4px; border-radius: 12px; border: 1px solid #00000012;"
-                class="border-white">
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" style="width: 100%; padding: 0 5px;"
-                      role="presentation">
-                      <tr>
-                        <td style="width: {{ feed_time_spent_percentage }}%; padding-right: 1px;">
-                          <div
-                            style="max-width: {{ feed_div_width }}px; height: 24px; background-color: #176FF3!important; border-radius: 6px 0px 0px 6px;">
-                          </div>
-                        </td>
-                        <td style="width: {{ audiodj_time_spent_percentage }}%; padding: 0 1px;">
-                          <div
-                            style="max-width: {{ audiodj_div_width }}px; height: 24px; background-color: #DE23AA!important;">
-                          </div>
-                        </td>
-                        <td style="width: {{ other_time_spent_percentage }}%; padding-left: 1px;">
-                          <div
-                            style="max-width: {{ other_div_width }}px; height: 24px; background-color: #F37500!important; border-radius: 0px 6px 6px 0px;">
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%;">
-                      <tr>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
-                            <tr>
-                              <td style="padding-bottom: 4px;">
-                                <p style="margin: 0;font-weight: 590;">
-                                {{ feed_time_spent }}</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                                  style="width: 100%;">
-                                  <tr>
-                                    <td style="width: 14px;">
-                                      <p
-                                        style="margin: 0; width: 8px; height: 8px; border-radius: 2px; background-color: #176FF3;">
-                                      </p>
-                                    </td>
-                                    <td>
-                                      <p style="margin: 0; color: #555659;font-size: 14px;"
-                                        class="text-grey">Feed</p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
-                            <tr>
-                              <td style="padding-bottom: 4px;">
-                                <p style="margin: 0;font-weight: 590;">
-                                {{ audiodj_time_spent }}</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                                  style="width: 100%;">
-                                  <tr>
-                                    <td style="width: 14px;">
-                                      <p
-                                        style="margin: 0; width: 8px; height: 8px; border-radius: 2px; background-color: #DE23AA;">
-                                      </p>
-                                    </td>
-                                    <td>
-                                      <p style="margin: 0; color: #555659;font-size: 14px;"
-                                        class="text-grey">Podcast</p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
-                            <tr>
-                              <td style="padding-bottom: 4px;">
-                                <p style="margin: 0;font-weight: 590;">
-                                {{ other_time_spent }}</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                                  style="width: 100%;">
-                                  <tr>
-                                    <td style="width: 14px;">
-                                      <p
-                                        style="margin: 0; width: 8px; height: 8px; border-radius: 2px; background-color: #F37500;">
-                                      </p>
-                                    </td>
-                                    <td>
-                                      <p style="margin: 0; color: #555659;font-size: 14px;"
-                                        class="text-grey">Other</p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- Flashcards -->
-          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="padding: 32px 0 12px 0; width: 100%;">
-                <tr>
-                  <td>
-                    <h2 style="margin: 0;">
-                      Flashcards
-                    </h2>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- graphic section -->
-          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; padding: 9px 4px 11px 4px; border-radius: 12px; border: 1px solid rgba(0, 0, 0, 0.07);"
-                class="border-white">
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; padding-bottom: 16px;">
-                      <tr>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
-                            <tr>
-                              <td style="padding-bottom: 4px;">
-                                <p style="margin: 0;font-weight: 590;">
-                                {{ concepts_learned_count }}</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
-                                  Unique</p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
-                            <tr>
-                              <td style="padding-bottom: 4px;">
-                                <p style="margin: 0;font-weight: 590;">
-                                {{ concepts_youdidntknow_count }}</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
-                                  Flipped</p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
-                            <tr>
-                              <td style="padding-bottom: 4px;">
-                                <p style="margin: 0;font-weight: 590;">
-                                {{ concepts_youknew_count }}</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
-                                  Skipped</p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; padding: 0 3px 0 3px;">
-                      <tr>
-                        {% for day in last_week_usage_stats %}
-                        {% if day.concepts_learned < daily_learning_goal %}
-                          {% if loop.first %}
-                          {# We display "Goal" label for the first day if below goal #}
-                          <td align="left"
-                            style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
-                            <p style="margin: 0; color: #8C8D90;font-size: 14px;font-weight: 700;"
-                              class="text-grey">
-                              Goal</p>
-                            </td>
-                          {% else %}
-                            <td style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
-                            </td>
-                          {% endif %}
-                        {% elif day.concepts_learned == daily_learning_goal %}
-                        <td align="center"
-                          style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
-                          <img style="vertical-align: middle;"
-                            src="https://cdn.glite.ai/assets/email/chk.png" alt="check" border="0"
-                            width="24" />
-                        </td>
-                        {% else %}
-                        {% set excess = day.concepts_learned - daily_learning_goal %}
-                        {% set max_excess = daily_learning_goal * 2 %}  {# Assuming max is 2x goal #}
-                        {% set capped_excess = [excess, max_excess] | min %}  {# Cap excess at max_excess #}
-                        {% set percentage = (capped_excess / max_excess) | float %}
-                        {% set excess_height = ((percentage * 51) + 8) | int %}  {# 8px min, up to 59px max #}
-                            <td style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
-                          <table align=" center" border="0" cellspacing="0" cellpadding="0"
-                            role="presentation" style="width: 100%;">
-                            <tr>
-                              <td style="text-align: center;"><img style="vertical-align: middle;"
-                                  src="https://cdn.glite.ai/assets/email/chk.png" alt="check"
-                                  border="0" width="24" /></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p
-                                  style="margin: 0;background-color: #00BC01; border-radius: 6px 6px 0 0; height: {{ excess_height }}px;">
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        {% endif %}
-                        {% endfor %}
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="width: 100%; padding: 2px 6px 2px 6px;">
-                    <div style="margin: 0; background-color: #8C8D90; height: 2px;" class="light-grey"></div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; padding: 0 3px 0 3px;">
-                      <tr>
-                        {% for day in last_week_usage_stats %}
-                        <td style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
-                        {% set concepts = day.concepts_learned %}
-                        {% if concepts == 0 %}
-                          {# No activity - tiny red bar #}
-                          <p style="margin: 0;background-color: #EC0D27; border-radius: 6px; height: 5px;">
-                          </p>
-                          {% elif concepts < daily_learning_goal*0.5 %}
-                          {# Below 50% of goal - red bar, height proportional to progress #}
-                          {% set percentage = (concepts / daily_learning_goal) | float %}
-                          {% set bar_height = ((percentage * 33) + 3) | int %}  {# 3px min, scales to ~36px #}
-                          <p
-                            style="margin: 0;background-color: #EC0D27; border-radius: 6px; height: {{ bar_height }}px;">
-                          </p>
-                          {% elif concepts < daily_learning_goal %}
-                          {# Below goal - yellow bar, height proportional to progress #}
-                          {% set percentage = (concepts / daily_learning_goal) | float %}
-                          {% set bar_height = ((percentage * 33) + 3) | int %}  {# 3px min, scales to ~36px #}
-                          <p
-                            style="margin: 0;background-color: #FFBC00; border-radius: 6px; height: {{ bar_height }}px;">
-                          </p>
-                          {% else %}
-                          {# Met or exceeded goal - green bar with flat top #}
-                          <p
-                            style="margin: 0;background-color: #00BC01; border-radius: 0 0 6px 6px; height: 38px;">
-                          </p>
-                          {% endif %}
-                          </td>
-                        {% endfor %}
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; padding: 8px 3px 4px 3px;">
-                      <tr>
-                        {% for day in last_week_usage_stats %}
-                        <td align="center"
-                          style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
-                          <p
-                            style="margin: 0; color: #1E1F22; text-align: center; font-size: 14px; font-weight: 590;">
-                            {{ day.concepts_learned }}</p>
-                        </td>
-                       {% endfor %}
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; padding: 0 3px 0 3px;">
-                      <tr>
-                        {% for day in last_week_usage_stats %}
-                        <td align="center"
-                          style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
-                          <p style="margin: 0; color: #555659;text-align: center;font-size: 14px;font-style: normal;font-weight: 400;"
-                            class="text-grey">
-                            {{ day.date }}</p>
-                        </td>
-                        {% endfor %}
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- Looked-up Words -->
-          {% if concepts_looked_up_count>0 %}
-          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="padding: 32px 0 12px 0; width: 100%;">
-                <tr>
-                  <td>
-                    <h2 style="margin: 0;">
-                      Looked-up Words
-                    </h2>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- rows section -->
-          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; padding: 9px 4px 0px 4px; border-radius: 12px; border: 1px solid #00000012;"
-                class="border-white">
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; padding-bottom: 14px;">
-                      <tr>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
-                            <tr>
-                              <td style="padding-bottom: 4px;">
-                                <p style="margin: 0;font-weight: 590;">
-                                {{ concepts_looked_up_count }}</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
-                                  Total</p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
-                            <tr>
-                              <td style="padding-bottom: 4px;">
-                                <p style="margin: 0;font-weight: 590;">
-                                {{ concepts_looked_up_new_count }}</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
-                                  First
-                                  time
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
-                            <tr>
-                              <td>
-                                <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                                  style="width: 100%; padding-bottom: 4px;">
-                                  <tr>
-                                    <td style="width: 14px;">
-                                      <p
-                                        style="margin: 0; width: 8px; height: 8px; border-radius: 50%; background-color: {% if average_lookup_difficulty_class == 'easy' %}#00BC01{% elif average_lookup_difficulty_class == 'mid' %}#FFBC00{% elif average_lookup_difficulty_class == 'hard' %}#EC0D27{% endif %};">
-                                      </p>
-                                    </td>
-                                    <td>
-                                      <p style="margin: 0;font-weight: 590">
-                                        {{ average_lookup_difficulty }}</p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
-                                  Avg.
-                                  difficulty
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                {% for c in concepts_looked_up %}
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; padding: 10px 5px 9px 5px;">
-                      <tr>
-                        <td style="width: 100%;">
-                          <p style="margin: 0;">
-                              {{ c.concept_text}}
-                          </p>
-                        </td>
-                        {% if c.difficulty == '' %}
-                        <td style="padding: 0px 5px 2px 0px;">
-                          <p
-                            style="margin: 0; height: 6px; width: 6px;">
-                          </p>
-                        </td>
-                        {% else %}
-                        <td style="padding: 0px 5px 2px 0px;">
-                        <p
-                          style="margin: 0; height: 6px; width: 6px;border-radius: 50%; background-color: {% if c.difficulty_class == 'easy' %}#00BC01{% elif c.difficulty_class == 'mid' %}#FFBC00{% elif c.difficulty_class == 'hard' %}#EC0D27{% endif %};">
-                        </p>
-                        </td>
-                        {% endif %}
-                        <td>
-                          <p style="margin: 0; color: #020306cc;font-size: 12px;font-weight: 590;">
-                            {{ c.difficulty }}</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                {% if not loop.last %}
-                <tr>
-                  <td style="width: 100%; padding: 0 5px 0 5px;">
-                    <div style="margin: 0; height: 1px; background-color: rgba(0, 0, 0, 0.07);">
-                    </div>
-                  </td>
-                </tr>
-                {% endif %}
-                {% endfor %}
-              </table>
-            </td>
-          </tr>
-          {% endif %}
-          <!-- Words on Studying -->
-          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="padding: 32px 0 12px 0; width: 100%;">
-                <tr>
-                  <td>
-                    <h2 style="margin: 0;">
-                      Words on Studying
-                    </h2>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- rows section -->
-          <tr>
-            <td style="padding-bottom: 44px;">
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; padding: 9px 4px 0px 4px; border-radius: 12px; border: 1px solid rgba(0, 0, 0, 0.07);"
-                class="border-white">
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; padding-bottom: 14px;">
-                      <tr>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
-                            <tr>
-                              <td style="padding-bottom: 4px;">
-                                <p style="margin: 0;font-weight: 590;">
-                                {{ concepts_learned_count }}</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
-                                  Total</p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
-                            <tr>
-                              <td style="padding-bottom: 4px;">
-                                <p style="margin: 0;font-weight: 590;">
-                                {{ concepts_new_count }}</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
-                                  New
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="left" style="width: 33.333%;">
-                          <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                            style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
-                            <tr>
-                              <td>
-                                <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                                  style="width: 100%; padding-bottom: 4px;">
-                                  <tr>
-                                    <td style="width: 14px;">
-                                      <p
-                                        style="margin: 0; width: 8px; height: 8px; border-radius: 50%; background-color: #FFBC00;">
-                                      </p>
-                                    </td>
-                                    <td>
-                                      <p style="margin: 0;font-weight: 590;">
-                                        {{ average_learning_difficulty }}</p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
-                                  Avg.
-                                  difficulty
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                      style="width: 100%; padding: 10px 5px;">
-                      {% for c in concepts_learned %}
-                      <tr>
-                        <td style="width: 69%;">
-                          <p style="margin: 0;">
-                            {{ c.concept_text }}
-                          </p>
-                        </td>
-                        {% if c.difficulty == '' %}
-                        <td style="width: 15px; !important;">&nbsp;</td>
-                        <td style="font-size: 12px;font-weight: 590;">&nbsp;</td>
-                        {% else %}
-                        <td style="width: 15px; color: {% if c.difficulty_class == 'easy' %}#00BC01{% elif c.difficulty_class == 'mid' %}#FFBC00{% elif c.difficulty_class == 'hard' %}#EC0D27{% endif %} !important;">●</td>
-                        <td style="font-size: 12px;font-weight: 590;">
-                          {{ c.difficulty }}
-                        </td>
-                        {% endif %}
-                        <td style="color: #00AB00 !important;font-size: 12px;font-weight: 590;">
-                          {{ c.knowledge_gain }}
-                        </td>
-                      </tr>
-                      {% if not loop.last %}
-                      <tr>
-                        <td colspan="4" style="padding: 10px 0;">
-                          <div style="margin: 0; height: 1px; background-color: #00000012;">
-                          </div>
-                        </td>
-                      </tr>
-                      {% endif %}
-                      {% endfor %}
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- background line -->
-          <tr>
-            <td>
-              <div style="width: 100%; height: 1px; background-color: rgba(0, 0, 0, 0.07);"></div>
-            </td>
-          </tr>
-          <!-- word points -->
-          <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; padding: 32px 0px 28px 0px;">
-                <tr>
-                  <td style="vertical-align: top;">
-                    <p style="margin: 0;font-size: 14px; padding-right: 10px;">
-                      1.</p>
-                  </td>
-                  <td>
-                    <p style="margin: 0;font-size: 14px;">
-                      Word Points represent your learning potential. Each point equals a&nbsp;new word you
-                      learn.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <!-- background line -->
-          <tr>
-            <td>
-              <div style="width: 100%; height: 1px; background-color: rgba(0, 0, 0, 0.07);"></div>
-            </td>
-          </tr>
-          <!-- subscribe -->
-          <tr>
-            <td>
-              <table order="0" cellspacing="0" cellpadding="0" role="presentation"
-                style="width: 100%; padding: 28px 0px 0px 0px;">
-                <tr>
-                  <td align="right" style="padding: 0px 5px 0px 5px"><a
-                      style="font-size: 14px; text-decoration-line: underline; text-decoration-style: solid;"
-                      href="{{ unsubscribe_url }}" target="_blank" rel="noopener">Unsubscribe</a>
-                  </td>
-                  <td style="width: 4px;">
-                    <p style="margin: 0; width: 4px; height: 4px; border-radius: 50%; background-color: #020306;"
-                      class="dot-white">
-                    </p>
-                  </td>
-                  <td align="left" style="padding: 0px 5px 0px 5px"><a
-                      style="font-size: 14px; text-decoration-line: underline; text-decoration-style: solid;"
-                      href="{{ resubscribe_url }}" target="_blank" rel="noopener">Resubscribe</a>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </tbody>
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation"
+				style="background-color: #ffffff;color: #020306;Margin:0;padding: 2px 10px;max-width: 393px;width:100%;">
+				<tbody>
+					<!-- logo section -->
+					<tr>
+						<td>
+							<table style="padding: 10px; background-color: #F2F3F6; border-radius: 12px;" width="100%"
+								border="0" cellpadding="0" cellspacing="0" role="presentation" class="bg-grey">
+								<tr>
+									<td style="width: 36px;" class="mobile-col-padding">
+										<table border="0" cellpadding="0" cellspacing="0" role="presentation" class="bg-grey">
+											<tr>
+												<td><a style="display: inline-block; font-size: 0;" href="https://www.google.com/"
+														target="_blank" rel="noopener">
+														<img style="vertical-align: middle; padding-right: 9px;"
+															src="https://cdn.glite.ai/assets/email/logo.png" alt="Glite logo"
+															border="0" width="36" />
+													</a></td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table border="0" cellpadding="0" cellspacing="0" role="presentation" class="bg-grey">
+											<tr>
+												<td style="font-size: 0;"><a style="font-weight: 700; color: #000000;"
+														href="https://www.glite.ai" target="_blank" rel="noopener">Glite</a></td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0" role="presentation"
+											class="bg-grey">
+											<tr>
+												<td>
+													<p style="margin: 0; text-align: end; font-size: 14px;" class="text-grey">
+														{{ stat_date }}</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- 3 columns section -->
+					<tr>
+						<td align="center" style="font-size: 0;">
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
+								<tr>
+									<td style="width: 33.333%;">
+										<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+											style="width: 100%; max-width: 124px; padding: 32px 5px; text-align: center;">
+											<tr>
+												<td style="padding: 0 0 4px 0;">
+													<p style="margin: 0;font-size: 20px; font-weight: 700;">
+														{{ word_points_change }}</p>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p style="margin: 0;font-size: 14px;" class="text-grey">
+														Word points&sup1;</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td style="width: 33.333%;">
+										<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+											style="width: 100%; max-width: 124px; padding: 32px 5px; text-align: center;">
+											<tr>
+												<td style="padding: 0 0 4px 0;">
+													<p style="margin: 0;font-size: 20px; font-weight: 700;">
+														{{ app_time_spent }}</p>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p style="margin: 0;font-size: 14px;" class="text-grey">
+														App usage</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td style="width: 33.333%;">
+										<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+											style="width: 100%; max-width: 124px; padding: 32px 5px; text-align: center;">
+											<tr>
+												<td style="padding: 0 0 4px 0;">
+													<p style="margin: 0;font-size: 20px; font-weight: 700;">
+														{{ concepts_learned_count }}</p>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p style="margin: 0;font-size: 14px;" class="text-grey">
+														Flashcards</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- current Learning Speed -->
+					<tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+								style="width: 100%; text-align: center; padding: 24px 10px; background-color: #F2F3F6; border-radius: 12px;"
+								class="bg-grey">
+								<tr>
+									<td style="padding-bottom: 16px;">
+										<h1 style="margin: 0;">
+											Current Learning Speed
+										</h1>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="margin: 0;font-size: 48px; font-weight: 700;">
+											{{ learning_speed }}
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-bottom: 20px;">
+										<p style="margin: 0;font-weight: 700;">
+											words&nbsp;/ year
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p style="margin:0; color: rgba(2, 3, 6, 0.70);font-size: 14px;" class="text-grey">Your
+											avg: 2,700 words&nbsp;/ year</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- Mastered Words -->
+					{% if concepts_graduated_count>0 %}
+					<tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+								style="width: 100%; padding: 32px 0 12px 0;">
+								<tr>
+									<td>
+										<h2 style="margin: 0;">
+											Mastered Words</h2>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+								style="width: 100%; padding: 4px 10px; border-radius: 12px; background-color: #F2F3F6;"
+								class="bg-grey">
+								{% for c in concepts_graduated %}
+								<tr>
+									<td>
+										<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+											style="width: 100%; padding: 8px 0px;" class="bg-grey">
+											<tr>
+												<td style="width: 100%;">
+													<p style="margin: 0;">
+														{{ c.concept_text }}</p>
+												</td>
+												<td style="padding-right: 5px;">
+													<p
+														style="margin: 0; width: 6px; height: 6px; border-radius: 50%; background-color: #FFBC00!important;">
+													</p>
+												</td>
+												<td style="padding-right: 16px;">
+													<p style="margin: 0;width: 20px;font-size: 12px;font-weight: 590;">
+														{{ c.difficulty }}</p>
+												</td>
+												<td style="padding-right: 12px;">
+													<p
+														style="margin: 0; width: 40px;color:#00AB00 !important;font-size: 12px;font-weight: 590;">
+														{{ c.knowledge_gain }}</p>
+												</td>
+												<td>
+													<img style="vertical-align: middle;"
+														src="https://cdn.glite.ai/assets/email/chk.png" alt="check" border="0"
+														width="24" />
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								{% if not loop.last %}
+								<tr>
+									<td>
+										<div style="width: 100%; max-width: 353px; height: 1px; background: #00000012;">
+										</div>
+									</td>
+								</tr>
+								{% endif %}
+								{% endfor %}
+							</table>
+						</td>
+					</tr>
+					{% endif %}
+					<!-- App Usage -->
+					<tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+								style="padding: 32px 0 12px 0; width: 100%;">
+								<tr>
+									<td>
+										<h2 style="margin: 0;">
+											App Usage
+										</h2>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- graphic section -->
+					{% set total_width = 351 %}
+					{% set feed_div_width = (total_width * feed_time_spent_percentage / 100)|int %}
+					{% set audiodj_div_width = (total_width * audiodj_time_spent_percentage / 100)|int %}
+					{% set other_div_width = (total_width * other_time_spent_percentage / 100)|int %} <tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+								style="width: 100%; padding: 9px 4px 11px 4px; border-radius: 12px; border: 1px solid #00000012;"
+								class="border-white">
+								<tr>
+									<td>
+										<table border="0" cellspacing="0" cellpadding="0" style="width: 100%; padding: 0 5px;"
+											role="presentation">
+											<tr>
+												<td style="width: {{ feed_time_spent_percentage }}%; padding-right: 1px;">
+													<div
+														style="max-width: {{ feed_div_width }}px; height: 24px; background-color: #176FF3!important; border-radius: 6px 0px 0px 6px;">
+													</div>
+												</td>
+												<td style="width: {{ audiodj_time_spent_percentage }}%; padding: 0 1px;">
+													<div
+														style="max-width: {{ audiodj_div_width }}px; height: 24px; background-color: #DE23AA!important;">
+													</div>
+												</td>
+												<td style="width: {{ other_time_spent_percentage }}%; padding-left: 1px;">
+													<div
+														style="max-width: {{ other_div_width }}px; height: 24px; background-color: #F37500!important; border-radius: 0px 6px 6px 0px;">
+													</div>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+											style="width: 100%;">
+											<tr>
+												<td align="left" style="width: 33.333%;">
+													<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+														style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
+														<tr>
+															<td style="padding-bottom: 4px;">
+																<p style="margin: 0;font-weight: 590;">
+																	{{ feed_time_spent }}</p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+																	style="width: 100%;">
+																	<tr>
+																		<td style="width: 14px;">
+																			<p
+																				style="margin: 0; width: 8px; height: 8px; border-radius: 2px; background-color: #176FF3;">
+																			</p>
+																		</td>
+																		<td>
+																			<p style="margin: 0; color: #555659;font-size: 14px;"
+																				class="text-grey">Feed</p>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td align="left" style="width: 33.333%;">
+													<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+														style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
+														<tr>
+															<td style="padding-bottom: 4px;">
+																<p style="margin: 0;font-weight: 590;">
+																	{{ audiodj_time_spent }}</p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+																	style="width: 100%;">
+																	<tr>
+																		<td style="width: 14px;">
+																			<p
+																				style="margin: 0; width: 8px; height: 8px; border-radius: 2px; background-color: #DE23AA;">
+																			</p>
+																		</td>
+																		<td>
+																			<p style="margin: 0; color: #555659;font-size: 14px;"
+																				class="text-grey">Podcast</p>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td align="left" style="width: 33.333%;">
+													<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+														style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
+														<tr>
+															<td style="padding-bottom: 4px;">
+																<p style="margin: 0;font-weight: 590;">
+																	{{ other_time_spent }}</p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+																	style="width: 100%;">
+																	<tr>
+																		<td style="width: 14px;">
+																			<p
+																				style="margin: 0; width: 8px; height: 8px; border-radius: 2px; background-color: #F37500;">
+																			</p>
+																		</td>
+																		<td>
+																			<p style="margin: 0; color: #555659;font-size: 14px;"
+																				class="text-grey">Other</p>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- Flashcards -->
+					<tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+								style="padding: 32px 0 12px 0; width: 100%;">
+								<tr>
+									<td>
+										<h2 style="margin: 0;">
+											Flashcards
+										</h2>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- graphic section -->
+					<tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+								style="width: 100%; padding: 9px 4px 11px 4px; border-radius: 12px; border: 1px solid rgba(0, 0, 0, 0.07);"
+								class="border-white">
+								<tr>
+									<td>
+										<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+											style="width: 100%; padding-bottom: 16px;">
+											<tr>
+												<td align="left" style="width: 33.333%;">
+													<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+														style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
+														<tr>
+															<td style="padding-bottom: 4px;">
+																<p style="margin: 0;font-weight: 590;">
+																	{{ concepts_learned_count }}</p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
+																	Unique</p>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td align="left" style="width: 33.333%;">
+													<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+														style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
+														<tr>
+															<td style="padding-bottom: 4px;">
+																<p style="margin: 0;font-weight: 590;">
+																	{{ concepts_youdidntknow_count }}</p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
+																	Flipped</p>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td align="left" style="width: 33.333%;">
+													<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+														style="width: 100%; max-width: 121px; padding: 12px 5px 0 5px;">
+														<tr>
+															<td style="padding-bottom: 4px;">
+																<p style="margin: 0;font-weight: 590;">
+																	{{ concepts_youknew_count }}</p>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
+																	Skipped</p>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+											style="width: 100%; padding: 0 3px 0 3px;">
+											<tr>
+												{% for day in last_week_usage_stats %}
+												{% if day.concepts_learned < daily_learning_goal %} {% if loop.first %} {# We
+													display "Goal" label for the first day if below goal #} <td align="left"
+													style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
+													<p style="margin: 0; color: #8C8D90;font-size: 14px;font-weight: 700;"
+														class="text-grey">
+														Goal</p>
+									</td>
+									{% else %}
+									<td style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
+									</td>
+									{% endif %}
+									{% elif day.concepts_learned == daily_learning_goal %}
+									<td align="center" style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
+										<img style="vertical-align: middle;" src="https://cdn.glite.ai/assets/email/chk.png"
+											alt="check" border="0" width="24" />
+									</td>
+									{% else %}
+									{% set excess = day.concepts_learned - daily_learning_goal %}
+									{% set max_excess = daily_learning_goal * 2 %} {# Assuming max is 2x goal #}
+									{% set capped_excess = [excess, max_excess] | min %} {# Cap excess at max_excess #}
+									{% set percentage = (capped_excess / max_excess) | float %}
+									{% set excess_height = ((percentage * 51) + 8) | int %} {# 8px min, up to 59px max #}
+									<td style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
+										<table align=" center" border="0" cellspacing="0" cellpadding="0" role="presentation"
+											style="width: 100%;">
+											<tr>
+												<td style="text-align: center;"><img style="vertical-align: middle;"
+														src="https://cdn.glite.ai/assets/email/chk.png" alt="check" border="0"
+														width="24" /></td>
+											</tr>
+											<tr>
+												<td>
+													<p
+														style="margin: 0;background-color: #00BC01!important; border-radius: 6px 6px 0 0; height: {{ excess_height }}px;">
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+									{% endif %}
+									{% endfor %}
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 100%; padding: 2px 6px 2px 6px;">
+							<div style="margin: 0; background-color: #8C8D90; height: 2px;" class="light-grey"></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+								style="width: 100%; padding: 0 3px 0 3px;">
+								<tr>
+									{% for day in last_week_usage_stats %}
+									<td style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom; height: 38px;">
+										{% set concepts = day.concepts_learned %}
+										{% if concepts == 0 %}
+										{# No activity - tiny red bar #}
+										<p
+											style="margin: 0;background-color: #EC0D27!important; border-radius: 6px; height: 5px;">
+										</p>
+										{% elif concepts < daily_learning_goal*0.5 %} {# Below 50% of goal - red bar, height
+											proportional to progress #} {% set percentage=(concepts / daily_learning_goal) | float
+											%} {% set bar_height=((percentage * 33) + 3) | int %} {# 3px min, scales to ~36px #} <p
+											style="margin: 0;background-color: #EC0D27!important; border-radius: 6px; height: {{ bar_height }}px;">
+											</p>
+											{% elif concepts < daily_learning_goal %} {# Below goal - yellow bar, height
+												proportional to progress #} {% set percentage=(concepts / daily_learning_goal) |
+												float %} {% set bar_height=((percentage * 33) + 3) | int %} {# 3px min, scales to
+												~36px #} <p
+												style="margin: 0;background-color: #FFBC00!important; border-radius: 6px; height: {{ bar_height }}px;">
+												</p>
+												{% else %}
+												{# Met or exceeded goal - green bar with flat top #}
+												<p
+													style="margin: 0;background-color: #00BC01!important; border-radius: 0 0 6px 6px; height: 38px;">
+												</p>
+												{% endif %}
+									</td>
+									{% endfor %}
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+								style="width: 100%; padding: 8px 3px 4px 3px;">
+								<tr>
+									{% for day in last_week_usage_stats %}
+									<td align="center" style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
+										<p
+											style="margin: 0; color: #1E1F22; text-align: center; font-size: 14px; font-weight: 590;">
+											{{ day.concepts_learned }}</p>
+									</td>
+									{% endfor %}
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+								style="width: 100%; padding: 0 3px 0 3px;">
+								<tr>
+									{% for day in last_week_usage_stats %}
+									<td align="center" style="width: 14.286%; padding: 0 3px 0 3px; vertical-align: bottom;">
+										<p style="margin: 0; color: #555659;text-align: center;font-size: 14px;font-style: normal;font-weight: 400;"
+											class="text-grey">
+											{{ day.date }}</p>
+									</td>
+									{% endfor %}
+								</tr>
+							</table>
+						</td>
+					</tr>
+			</table>
+			</td>
+			</tr>
+			<!-- Looked-up Words -->
+			{% if concepts_looked_up_count>0 %}
+			<tr>
+				<td>
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+						style="padding: 32px 0 12px 0; width: 100%;">
+						<tr>
+							<td>
+								<h2 style="margin: 0;">
+									Looked-up Words
+								</h2>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!-- rows section -->
+			<tr>
+				<td>
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+						style="width: 100%; padding: 9px 4px 0px 4px; border-radius: 12px; border: 1px solid #00000012;"
+						class="border-white">
+						<tr>
+							<td>
+								<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+									style="width: 100%; padding-bottom: 14px;">
+									<tr>
+										<td align="left" style="width: 33.333%;">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+												style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
+												<tr>
+													<td style="padding-bottom: 4px;">
+														<p style="margin: 0;font-weight: 590;">
+															{{ concepts_looked_up_count }}</p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
+															Total</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td align="left" style="width: 33.333%;">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+												style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
+												<tr>
+													<td style="padding-bottom: 4px;">
+														<p style="margin: 0;font-weight: 590;">
+															{{ concepts_looked_up_new_count }}</p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
+															First
+															time
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td align="left" style="width: 33.333%;">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+												style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
+												<tr>
+													<td>
+														<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+															style="width: 100%; padding-bottom: 4px;">
+															<tr>
+																<td style="width: 14px;">
+																	<p
+																		style="margin: 0; width: 8px; height: 8px; border-radius: 50%; background-color: {% if average_lookup_difficulty_class == 'easy' %}#00BC01{% elif average_lookup_difficulty_class == 'mid' %}#FFBC00{% elif average_lookup_difficulty_class == 'hard' %}#EC0D27{% endif %};">
+																	</p>
+																</td>
+																<td>
+																	<p style="margin: 0;font-weight: 590">
+																		{{ average_lookup_difficulty }}</p>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
+															Avg.
+															difficulty
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						{% for c in concepts_looked_up %}
+						<tr>
+							<td>
+								<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+									style="width: 100%; padding: 10px 5px 9px 5px;">
+									<tr>
+										<td style="width: 100%;">
+											<p style="margin: 0;">
+												{{ c.concept_text}}
+											</p>
+										</td>
+										{% if c.difficulty == '' %}
+										<td style="padding: 0px 5px 2px 0px;">
+											<p style="margin: 0; height: 6px; width: 6px;">
+											</p>
+										</td>
+										{% else %}
+										<td style="padding: 0px 5px 2px 0px;">
+											<p
+												style="margin: 0; height: 6px; width: 6px;border-radius: 50%; background-color: {% if c.difficulty_class == 'easy' %}#00BC01{% elif c.difficulty_class == 'mid' %}#FFBC00{% elif c.difficulty_class == 'hard' %}#EC0D27{% endif %};">
+											</p>
+										</td>
+										{% endif %}
+										<td>
+											<p style="margin: 0; color: #020306cc;font-size: 12px;font-weight: 590;">
+												{{ c.difficulty }}</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						{% if not loop.last %}
+						<tr>
+							<td style="width: 100%; padding: 0 5px 0 5px;">
+								<div style="margin: 0; height: 1px; background-color: rgba(0, 0, 0, 0.07);">
+								</div>
+							</td>
+						</tr>
+						{% endif %}
+						{% endfor %}
+					</table>
+				</td>
+			</tr>
+			{% endif %}
+			<!-- Words on Studying -->
+			<tr>
+				<td>
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+						style="padding: 32px 0 12px 0; width: 100%;">
+						<tr>
+							<td>
+								<h2 style="margin: 0;">
+									Words on Studying
+								</h2>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!-- rows section -->
+			<tr>
+				<td style="padding-bottom: 44px;">
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+						style="width: 100%; padding: 9px 4px 0px 4px; border-radius: 12px; border: 1px solid rgba(0, 0, 0, 0.07);"
+						class="border-white">
+						<tr>
+							<td>
+								<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+									style="width: 100%; padding-bottom: 14px;">
+									<tr>
+										<td align="left" style="width: 33.333%;">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+												style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
+												<tr>
+													<td style="padding-bottom: 4px;">
+														<p style="margin: 0;font-weight: 590;">
+															{{ concepts_learned_count }}</p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
+															Total</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td align="left" style="width: 33.333%;">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+												style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
+												<tr>
+													<td style="padding-bottom: 4px;">
+														<p style="margin: 0;font-weight: 590;">
+															{{ concepts_new_count }}</p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
+															New
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td align="left" style="width: 33.333%;">
+											<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+												style="width: 100%; max-width: 121px; padding: 0 5px 0 5px;">
+												<tr>
+													<td>
+														<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+															style="width: 100%; padding-bottom: 4px;">
+															<tr>
+																<td style="width: 14px;">
+																	<p
+																		style="margin: 0; width: 8px; height: 8px; border-radius: 50%; background-color: #FFBC00!important;">
+																	</p>
+																</td>
+																<td>
+																	<p style="margin: 0;font-weight: 590;">
+																		{{ average_learning_difficulty }}</p>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p style="margin: 0; color: #555659;font-size: 14px;" class="text-grey">
+															Avg.
+															difficulty
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+									style="width: 100%; padding: 10px 5px;">
+									{% for c in concepts_learned %}
+									<tr>
+										<td style="width: 73%;">
+											<p style="margin: 0;">
+												{{ c.concept_text }}
+											</p>
+										</td>
+										{% if c.difficulty == '' %}
+										<td style="font-size: 12px;font-weight: 590;">&nbsp;</td>
+										{% else %}
+										<td style="font-size: 12px;font-weight: 590;">
+											{{ c.difficulty }}
+										</td>
+										{% endif %}
+										<td align="right" style="color: #00AB00 !important;font-size: 12px;font-weight: 590;">
+											{{ c.knowledge_gain }}
+										</td>
+									</tr>
+									{% if not loop.last %}
+									<tr>
+										<td colspan="3" style="padding: 10px 0;">
+											<div style="margin: 0; height: 1px; background-color: #00000012;">
+											</div>
+										</td>
+									</tr>
+									{% endif %}
+									{% endfor %}
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!-- background line -->
+			<tr>
+				<td>
+					<div style="width: 100%; height: 1px; background-color: rgba(0, 0, 0, 0.07);"></div>
+				</td>
+			</tr>
+			<!-- word points -->
+			<tr>
+				<td>
+					<table border="0" cellspacing="0" cellpadding="0" role="presentation"
+						style="width: 100%; padding: 32px 0px 28px 0px;">
+						<tr>
+							<td style="vertical-align: top;">
+								<p style="margin: 0;font-size: 14px; padding-right: 10px;">
+									1.</p>
+							</td>
+							<td>
+								<p style="margin: 0;font-size: 14px;">
+									Word Points represent your learning potential. Each point equals a&nbsp;new word you
+									learn.
+								</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!-- background line -->
+			<tr>
+				<td>
+					<div style="width: 100%; height: 1px; background-color: rgba(0, 0, 0, 0.07);"></div>
+				</td>
+			</tr>
+			<!-- subscribe -->
+			<tr>
+				<td>
+					<table order="0" cellspacing="0" cellpadding="0" role="presentation"
+						style="width: 100%; padding: 28px 0px 0px 0px;">
+						<tr>
+							<td align="right" style="padding: 0px 5px 0px 5px"><a
+									style="font-size: 14px; text-decoration-line: underline; text-decoration-style: solid;"
+									href="{{ unsubscribe_url }}" target="_blank" rel="noopener">Unsubscribe</a>
+							</td>
+							<td style="width: 4px;">
+								<p style="margin: 0; width: 4px; height: 4px; border-radius: 50%; background-color: #020306;"
+									class="dot-white">
+								</p>
+							</td>
+							<td align="left" style="padding: 0px 5px 0px 5px"><a
+									style="font-size: 14px; text-decoration-line: underline; text-decoration-style: solid;"
+									href="{{ resubscribe_url }}" target="_blank" rel="noopener">Resubscribe</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			</tbody>
 
-      </table>
-    </div>
-  </center>
+			</table>
+		</div>
+	</center>
 </body>
+
 </html>
